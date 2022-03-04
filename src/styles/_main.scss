@@ -1,0 +1,123 @@
+// - Very dark cyan: hsl(183, 100%, 15%)
+// - Dark grayish cyan: hsl(186, 14%, 43%)
+// - Grayish cyan: hsl(184, 14%, 56%)
+// - Light grayish cyan: hsl(185, 41%, 84%)
+// - Very light grayish cyan: hsl(189, 41%, 97%)
+// - White: hsl(0, 0%, 100%)
+
+// - Font size (form inputs): 24px
+
+// - Family: [Space Mono](https://fonts.google.com/specimen/Space+Mono)
+// - Weights: 700
+
+$darkCyan: hsl(183, 100%, 15%);
+$darkGray: hsl(186, 14%, 43%);
+$grayish: hsl(184, 14%, 56%);
+$lightGray: hsl(185, 41%, 84%);
+$veryLightGray: hsl(189, 41%, 97%);
+$white: white;
+$strongCyan: hsl(172, 67%, 45%);
+$radius: 20px;
+$inputRadius: 6px;
+$percentRadius: 4px;
+
+header {
+    width: fit-content;
+    margin: 30px auto;
+    color: $darkCyan;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+main {
+    margin: 0 auto;
+    width: 50%;
+
+    @media (max-width: 1600px) {
+        width: 60%;
+    }
+    @media (max-width: 1300px) {
+        width: 75%;
+    }
+    @media (max-width: 1150px) {
+        width: 90%;
+    }
+
+    .container {
+        background-color: $white;
+        border-radius: $radius;
+        padding: 20px;
+
+        label {
+            font-size: 1rem;
+            display: block;
+            color: $darkCyan;
+            margin-bottom: 10px;
+        }
+
+        input {
+            background-color: $veryLightGray;
+            border: none;
+            border-radius: $inputRadius;
+            font-family: "Space Mono", monospace;
+            padding: 3px 15px;
+            font-size: 28px;
+            color: $darkCyan;
+            text-align: right;
+            width: 100%;
+        }
+
+        .input-wrapper {
+            margin: 35px 0;
+            .active {
+                background-color: $strongCyan !important;
+                color: $darkCyan !important;
+            }
+
+            .custom {
+                background-color: $veryLightGray !important;
+                color: $darkCyan !important;
+            }
+
+            .percentage-wrapper {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12.5px;
+                // padding: 20px;
+
+                .option {
+                    margin: 0 auto;
+                    color: $white;
+                    font-size: 1.5rem;
+                    border-radius: $percentRadius;
+                    background-color: $darkCyan;
+                    width: 100%;
+                    text-align: center;
+                    padding: 6px 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .input-wrapper:first-child {
+            margin-top: 0px;
+        }
+        .input-wrapper:last-child {
+            margin-top: 0px;
+        }
+
+        .bill-input {
+            background-image: url(../images/icon-dollar.svg);
+            background-repeat: no-repeat;
+            background-position: top 50% left 20px;
+            background-size: 12.5px;
+        }
+
+        .people-input {
+            background-image: url(../images/icon-person.svg);
+            background-repeat: no-repeat;
+            background-position: top 50% left 20px;
+            background-size: 12.5px;
+        }
+    }
+}

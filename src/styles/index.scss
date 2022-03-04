@@ -1,0 +1,22 @@
+@import "main";
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+$lightGray: hsl(185, 41%, 84%);
+
+body {
+    margin: 0;
+    font-family: "Space Mono", monospace;
+    background-color: $lightGray;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}

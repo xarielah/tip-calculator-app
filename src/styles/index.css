@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+header {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 30px auto;
+  color: #00494d;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+main {
+  margin: 0 auto;
+  width: 50%;
+}
+
+@media (max-width: 1600px) {
+  main {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1300px) {
+  main {
+    width: 75%;
+  }
+}
+
+@media (max-width: 1150px) {
+  main {
+    width: 90%;
+  }
+}
+
+main .container {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+main .container label {
+  font-size: 1rem;
+  display: block;
+  color: #00494d;
+  margin-bottom: 10px;
+}
+
+main .container input {
+  background-color: #f4fafa;
+  border: none;
+  border-radius: 6px;
+  font-family: "Space Mono", monospace;
+  padding: 3px 15px;
+  font-size: 28px;
+  color: #00494d;
+  text-align: right;
+  width: 100%;
+}
+
+main .container .input-wrapper {
+  margin: 35px 0;
+}
+
+main .container .input-wrapper .active {
+  background-color: #26c0ab !important;
+  color: #00494d !important;
+}
+
+main .container .input-wrapper .custom {
+  background-color: #f4fafa !important;
+  color: #00494d !important;
+}
+
+main .container .input-wrapper .percentage-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 12.5px;
+}
+
+main .container .input-wrapper .percentage-wrapper .option {
+  margin: 0 auto;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  background-color: #00494d;
+  width: 100%;
+  text-align: center;
+  padding: 6px 20px;
+  cursor: pointer;
+}
+
+main .container .input-wrapper:first-child {
+  margin-top: 0px;
+}
+
+main .container .input-wrapper:last-child {
+  margin-top: 0px;
+}
+
+main .container .bill-input {
+  background-image: url(../images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: top 50% left 20px;
+  background-size: 12.5px;
+}
+
+main .container .people-input {
+  background-image: url(../images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: top 50% left 20px;
+  background-size: 12.5px;
+}
+
+body {
+  margin: 0;
+  font-family: "Space Mono", monospace;
+  background-color: #c5e4e7;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+/*# sourceMappingURL=index.css.map */
