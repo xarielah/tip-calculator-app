@@ -17,7 +17,7 @@ const Result = () => {
             //  (bill * (percent / 100)) / people ~~~ tip per person
             //  (bill / people) + tip per person
 
-            const tipPerPerson = (bill * (percent / 100)) / people
+            const tipPerPerson = (bill * (percent / 100))
             const totalPerPerson = (bill / people) + tipPerPerson
             setTipAmount(tipPerPerson)
             setTotal(totalPerPerson)
