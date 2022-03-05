@@ -1,7 +1,7 @@
 import * as actions from './actionTypes'
 
 const initialStore = {
-    people: 0,
+    people: 1,
     bill: 0,
     percent: 0
 }
@@ -11,9 +11,7 @@ export default function reducer(state = initialStore, action) {
         case actions.RESET:
             return {
                 ...state,
-                people: 0,
-                bill: 0,
-                percent: 0
+                ...initialStore
             }
         case actions.SET_PERCENT:
             return {

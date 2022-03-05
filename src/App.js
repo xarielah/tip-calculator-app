@@ -1,4 +1,3 @@
-import store from "./redux/store";
 import { Result, Calculate } from './components'
 
 function App() {
